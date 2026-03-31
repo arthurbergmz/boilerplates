@@ -32,17 +32,17 @@
     "prepare": "husky"
   },
   "devDependencies": {
-    "@types/node": "24.12.0",
-    "@types/web": "0.0.345",
-    "@typescript/native-preview": "7.0.0-dev.20260331.1",
-    "husky": "9.1.7",
-    "oxfmt": "0.43.0",
-    "oxlint": "1.58.0",
-    "oxlint-tsgolint": "0.18.1",
-    "tsdown": "0.21.7",
-    "typescript": "6.0.2",
-    "vite": "8.0.3",
-    "vitest": "4.1.2"
+    "@types/node": "latest",
+    "@types/web": "latest",
+    "@typescript/native-preview": "latest",
+    "husky": "latest",
+    "oxfmt": "latest",
+    "oxlint": "latest",
+    "oxlint-tsgolint": "latest",
+    "tsdown": "latest",
+    "typescript": "latest",
+    "vite": "latest",
+    "vitest": "latest"
   },
   "engines": {
     "node": ">=24.14.1"
