@@ -1,0 +1,51 @@
+{
+  "name": "@{{namespace}}/{{package-name}}",
+  "version": "{{version}}",
+  "description": "{{description}}",
+  "license": "MIT",
+  "author": "{{author-name}} <{{author-email}}>",
+  "repository": {
+    "type": "git",
+    "url": "git+{{repository-url}}.git"
+  },
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "exports": {
+    ".": "./dist/index.js",
+    "./package.json": "./package.json"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsdown --from-vite",
+    "dev": "tsdown --watch --from-vite",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "oxlint",
+    "lint:fix": "oxlint --fix",
+    "fmt": "oxfmt ./src --check",
+    "fmt:fix": "oxfmt ./src --write",
+    "check": "npm run lint && npm run fmt && npm run test",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "@types/node": "24.12.0",
+    "@types/web": "0.0.345",
+    "@typescript/native-preview": "7.0.0-dev.20260331.1",
+    "husky": "9.1.7",
+    "oxfmt": "0.43.0",
+    "oxlint": "1.58.0",
+    "oxlint-tsgolint": "0.18.1",
+    "tsdown": "0.21.7",
+    "typescript": "6.0.2",
+    "vite": "8.0.3",
+    "vitest": "4.1.2"
+  },
+  "engines": {
+    "node": ">=24.14.1"
+  },
+  "packageManager": "npm@11.12.1"
+}

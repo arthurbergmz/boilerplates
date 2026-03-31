@@ -1,0 +1,22 @@
+{
+  "name": "{{monorepo-name}}",
+  "version": "{{version}}",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "type": "module",
+  "devDependencies": {
+    "vite": "8.0.3",
+    "vitest": "4.1.2"
+  },
+  "overrides": {
+    "vite": "npm:vite@8.0.3",
+    "vitest": "npm:vitest@4.1.2"
+  },
+  "engines": {
+    "node": ">=24.14.1"
+  },
+  "packageManager": "npm@11.12.1"
+}
