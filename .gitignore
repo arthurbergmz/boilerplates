@@ -16,7 +16,11 @@ build/
 Thumbs.db
 
 # Ignore IDE specific files
-.vscode/
+.vscode/*
 !.vscode/extensions.json
+!.vscode/settings.json
 .idea/
 *.iml
+
+# Ignore non-boilerplate files
+package-lock.json

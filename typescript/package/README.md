@@ -2,9 +2,22 @@
 
 > @{{namespace}}/{{package-name}}
 
+{{package-description}}
 A starter project for a Typescript package.
 
 ## Getting started
+
+Replace the following with your own values:
+
+- `{{namespace}}`: the namespace of your package, e.g. `my-org`
+- `{{package-name}}`: the name of your package, e.g. `my-package`
+- `{{package-title}}`: a human-friendly title for your package, e.g. `My Package`
+- `{{package-description}}`: a short description of your package, e.g. `A starter project for a Typescript package.`
+- `{{package-version}}`: the version of your package, e.g. `0.0.1`
+- `{{license}}`: the license of your package, e.g. `MIT` or `UNLICENSED`
+- `{{author-name}}`: the name of the author of your package, e.g. `John Doe`
+- `{{author-email}}`: the email of the author of your package, e.g. `john.doe@example.com`
+- `{{repository-url}}`: the URL of your package's repository, e.g. `https://github.com/my-org/my-package`
 
 Install dependencies by running:
 

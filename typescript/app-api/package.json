@@ -1,27 +1,17 @@
 {
-  "name": "@{{namespace}}/{{package-name}}",
-  "version": "{{package-version}}",
-  "description": "{{package-description}}",
+  "name": "{{app-name}}",
+  "version": "{{app-version}}",
+  "description": "{{app-description}}",
   "type": "module",
-  "license": "{{license}}",
-  "author": "{{author-name}} <{{author-email}}>",
+  "private": true,
   "repository": {
     "type": "git",
     "url": "git+{{repository-url}}.git"
   },
-  "files": [
-    "dist"
-  ],
-  "exports": {
-    ".": "./dist/index.js",
-    "./package.json": "./package.json"
-  },
-  "publishConfig": {
-    "access": "public"
-  },
   "scripts": {
-    "build": "tsdown --from-vite",
-    "dev": "tsdown --watch --from-vite",
+    "build": "vite build",
+    "dev": "vite dev",
+    "preview": "vite preview",
     "test": "vitest run",
     "test:watch": "vitest",
     "lint": "oxlint",
@@ -31,6 +21,9 @@
     "check": "npm run lint && npm run fmt && npm run test",
     "prepare": "husky"
   },
+  "imports": {
+    "#*": "./*"
+  },
   "devDependencies": {
     "@types/node": "latest",
     "@types/web": "latest",
@@ -39,8 +32,8 @@
     "oxfmt": "latest",
     "oxlint": "latest",
     "oxlint-tsgolint": "latest",
-    "tsdown": "latest",
     "typescript": "latest",
+    "nitro": "latest",
     "vite": "latest",
     "vitest": "latest"
   },
